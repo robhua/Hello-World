@@ -5,6 +5,7 @@
 # Commit : Lưu lại bản chụp (snapshot) các tệp tin thư mục đã thay đổi nằm trong Stagin Area. Lưu lịch sử chỉnh code, tên, địa chỉ email, lời nhắn.
 commit and push
 # git commit -m 'message'
+# git commit -a -m 'message' #Bỏ qua trạng thái staging area để commit.
 
 Các trạng thái tập tin: Unmodified, Modified, Staged, Untracked.
 Untracked -> Staged
