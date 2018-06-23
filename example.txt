@@ -1,1 +1,8 @@
-First commit and push
+commit and push
+git add/rm <file...>
+git commit -m 'messeage'
+git push origin master
+
+git log -p
+git log --oneline
+git log --reserve
