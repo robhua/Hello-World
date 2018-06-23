@@ -1,7 +1,5 @@
-commit and push
-git add/rm <file...>
-git commit -m 'messeage'
-git push origin master
+# Làm việc nhóm: Xem ai đã commit vào dự án, phục hồi commit trước đó nếu thấy thiếu tệp tin để bổ xung.
+# Một commit: checksum riêng, ai commit, ngày nào, lúc nào, nội dung commit.
 
 # SHOW THE HISTORY LOG
 git log [<potions>] [<revision range>] [[--] <path>...]
@@ -11,11 +9,37 @@ git log [<potions>] [<revision range>] [[--] <path>...]
 #git log --oneline
 #git log --reserve
 
-# options to view logs
+
+# Tùy chọn tối ưu đọc log
 --since, after : Xem commit tu ngay nhat dinh -> hien tai
 --until : Xem commit truoc ngay nhat dinh
 --author : Xem commit cua mot nguoi
---grep : Loc commit
+--grep : lọc commit trong log
 
-# FILTER LOG WITH --pretty
+# FILTER LOG WITH --pretty : Lọc một đối tượng trong lịch sử commit (vd. nội dung, email người commit)
 git log --pretty='%tag'
+# Danh sách tag hay dùng
+    %H –  Commit hash
+    %h – Abbreviated commit hash
+    %T – Tree hash
+    %t – Abbreviated tree hash
+    %P – Parent hashes
+    %p – Abbreviated parent hashes
+    %an – Author name
+    %ae – Author e-mail
+    %ad – Author date (format respects the –date=option)
+    %ar – Author date, relative
+    %cn – Committer name
+    %ce – Committer email
+    %cd – Committer date
+    %cr – Committer date, relative
+    %s – Subject	
+# Làm gon log mặc định, thêm màu sắc
+#git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+# git lg
+
+# Xóa bỏ commit trước và commit lại (Đưa tệp tin cần bổ xung vào Staging Area trước)
+#git commit --amend -m 'messege'
+
+# Loại bỏ tệp tin không muốn commit (ra khỏi Stagin Area)
+# git reset HEAD tên_file
