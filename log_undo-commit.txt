@@ -1,0 +1,21 @@
+commit and push
+git add/rm <file...>
+git commit -m 'messeage'
+git push origin master
+
+# SHOW THE HISTORY LOG
+git log [<potions>] [<revision range>] [[--] <path>...]
+#git log
+#git log -p  -- Hien thi chi tiet commit
+#git log -1  -- Xem commit gan nhat
+#git log --oneline
+#git log --reserve
+
+# options to view logs
+--since, after : Xem commit tu ngay nhat dinh -> hien tai
+--until : Xem commit truoc ngay nhat dinh
+--author : Xem commit cua mot nguoi
+--grep : Loc commit
+
+# FILTER LOG WITH --pretty
+git log --pretty='%tag'
