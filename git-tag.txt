@@ -1,0 +1,23 @@
+# Tạo thêm branch từ tag, để phát triển nhánh.
+# Tag sẽ giúp dễ dàng đối chiếu, (chỉ cần nhớ tag, không cần nhớ checksum)
+# Xem lại các commit gắn trong một tag.
+# Lightweight tag : Đánh dấu snapshot của commit
+# Annotated tag : Có thể đặt tiêu đề, thông tin người tag, ngày tag.
+
+LIGHTWEIGHT TAG
+#git tag --Danh sách tag có trong dự án
+#git tag 'tên-tag' -- tạo tag với tên-tag, cho commit cuối cùng
+#git show 'tên-tag' -- Xem lần commit với tên-tag
+
+ANNOTATED TAG
+#git tag -a 'tên-tag' -m 'message' --- Thêm tham số -a, và -m
+#git tag -a 'tên-tag' checksum -m 'message' --- Thêm tag cho commit cũ
+
+#Đẩy tag lên remote repository
+# git push --tags
+
+# Tạo branch từ tag, sửa mã nguồn không ảnh hưởng đến master
+#git checkout -b 'tên-branch' 'tên-tag'
+#git push origin 'tên-branch' --- đẩy lên remote repository.
+
+
