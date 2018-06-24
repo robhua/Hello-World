@@ -1,0 +1,20 @@
+# Staging Area : Khu vực lưu trữ tập tin chuẩn bị commit, tập tin sẽ có trạng thái Stagged.
+# Đưa tệp tin vào trạng thái Staging Area
+# git add <tên_file>
+
+# Commit : Lưu lại bản chụp (snapshot) các tệp tin thư mục đã thay đổi nằm trong Stagin Area. Lưu lịch sử chỉnh code, tên, địa chỉ email, lời nhắn.
+commit and push
+# git commit -m 'message'
+# git commit -a -m 'message' #Bỏ qua trạng thái staging area để commit.
+
+Các trạng thái tập tin: Unmodified, Modified, Staged, Untracked.
+Untracked -> Staged
+Unmodified -> Modified -> Staged
+Unmodified -> Untracked
+Staged -> Unmodified
+
+# Đưa tệp tin lên Remote Reposition (commit -> push)
+
+# Đưa tệp tin từ Tracked về Untracked nhưng không xóa hẳn ổ cứng.
+# rm  <file>
+# git rm -f tên_file #Xóa hẳn tệp tin
